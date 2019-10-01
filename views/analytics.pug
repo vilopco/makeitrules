@@ -1,0 +1,14 @@
+extends layout
+
+block content
+	block body
+	table
+		thead
+			tr
+				th Path
+				th Visits
+		tbody
+			each ruta in rutaS
+				tr
+					td=ruta._id.path
+					td=ruta.count
